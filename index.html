@@ -28,8 +28,8 @@
 <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
 
 </head>
-<body>
-    <header class="bg-gradient-to-b from-[hsla(0, 0%, 100%, 1)] to-[hsla(0, 0%, 100%, 1)]">
+<body class="bg-[rgba(244,244,244,1)]">
+  <header class="bg-gradient-to-b from-[rgba(255,255,255,0)] to-white">
         <div class="w-[95%] lg:w-[90%] mx-auto">
           <!-- this is navbar section -->
           <div class="navbar py-7 flex items-center justify-between">
@@ -61,16 +61,56 @@
             <i class="fa-solid fa-bars lg:hidden text-2xl md:hidden bg-white border-[1px] py-2 px-3 border-[#E9E9E9] rounded-full text-gray-600"></i>
           </div>
            <!-- hero section start -->
-            <section class="w-full mx-auto flex justify-center items-center flex-col text-center gap-8 pb-10">
+            <section class="w-full mx-auto flex justify-center items-center flex-col text-center gap-8 pb-20">
               
               <div>
                 <img src="./assets/banner.png" alt="this is hero section banner">
               </div>
-              <h2 class="w-full text-5xl lg:w-5/6 lg:text-6xl font-extrabold">A barn house of this design has a striking appearance</h2>
+              <h1 class="w-full text-4xl lg:w-5/6 lg:text-6xl font-[900]">A barn house of this design has a striking appearance</h1>
               <p class="w-full lg:w-4/6 text-base font-medium text-gray-500">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
               <button class="w-full lg:w-auto bg-lime-200 text-lg font-bold text-gray-900 p-2 px-4 rounded-3xl">View Details<i class="bg-mainClr text-black px-2 py-1 fa-solid fa-arrow-right -rotate-45 rounded-full text-sm ml-2"></i></button>
             </section>
         </div>
     </header>
+    <main>
+      <!-- about section -->
+      <section>
+          <div class="relative w-[95%] lg:w-[90%] mx-auto flex py-20 flex-col lg:flex-row gap-10 lg:gap-0">
+            <div class="absolute left-0 top-6 hidden lg:block">
+              <img src="./assets/Vector.png" alt="">
+            </div>
+            <!-- left section -->
+              <div class=" flex flex-col flex-1 justify-between items-center gap-8 lg:gap-0 lg:items-start">
+               
+                <button class="bg-white px-5 py-3 font-bold text-gray-700 rounded-full"><i class=" fa-solid fa-arrow-right mr-3"></i>About Us</button>
+                <h2 class="text-3xl font-extrabold text-center lg:text-left lg:text-5xl lg:font-bold">We design thoughtful, liveable spaces</h2>  
+                <p class="text-sm font-medium text-gray-500 text-center lg:text-left">The barn house captivates with its blend of rustic charm and 
+                  modern sophistication, featuring weathered wood, sleek metal accents.</p>
+                  <!-- div 1 -->
+                  <div class="bg-white p-5 rounded-2xl flex gap-3">
+                    <img src="./assets/commercial.png" alt="">
+                      <div>
+                          <h6 class="font-bold text-gray-600">Commercial</h6>
+                          <p class="text-sm font-medium text-gray-500">The barn house captivates with its blend of rustic charm and modern.</p>
+                      </div>
+                      
+                  </div>
+                  <!-- div 2 -->
+                  <div class="bg-white p-5 rounded-2xl flex gap-3">
+                    <img src="./assets/residential.png" alt="">
+                      <div>
+                          <h6 class="font-bold text-gray-600">Residential</h6>
+                          <p class="text-sm font-medium text-gray-500">The barn house captivates with its blend of rustic charm and modern.</p>
+                      </div>
+                      
+                  </div>
+              </div>
+              <!-- right section -->
+               <div class="w-full flex-1 flex items-end justify-end">
+                <img class="lg:w-[90%]" src="./assets/Rectangle.png" alt="">
+               </div>
+          </div>
+      </section>
+    </main>
 </body>
 </html>
